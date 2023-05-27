@@ -72,14 +72,14 @@ css({
         '.twitter': {
             width: '{space.6}',
             height: '{space.6}',
-            color: '#01abfb',
+            color: '#56acee',
 
             '@dark': {
                 color: '{color.gray.500}'
             },
 
             '&:hover': {
-                color: '#42c3ff',
+                color: '#7ebdee',
 
                 '@dark': {
                     color: '{color.gray.300}',

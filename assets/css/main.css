@@ -119,3 +119,11 @@ body {
     max-width: var(--size-2xl);
   }
 }
+
+.extra ul li .list-icon.none {
+  display: none;
+}
+
+.code-group .prose-code.highlight-bash code .line::before {
+  color: var(--color-primary-600) !important;
+}

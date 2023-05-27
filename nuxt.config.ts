@@ -33,7 +33,8 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'en'
-      }
+      },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }]
     },
   },
   extends: [
