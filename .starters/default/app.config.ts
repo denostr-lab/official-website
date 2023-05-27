@@ -33,7 +33,7 @@ export default defineAppConfig({
       iconLinks: [
         {
           href: 'https://www.bytetradelab.io/',
-          icon: '/img/bytetrade.svg'
+          icon: './img/bytetrade.svg'
         }
       ]
     }

@@ -66,9 +66,9 @@ jobs:
       #   run: echo 'modules[]=@nuxthq/studio' > .nuxtrc
 
       - name: Generate
-        run: ${{ steps.pkgman.outputs.package_manager }} nuxi generate
-      #   env:
-      #     NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
+        run: |
+          repo=${{ github.repository }}
+          NUXT_APP_BASE_URL=/${repo#*/}/ ${{ steps.pkgman.outputs.package_manager }} nuxi generate
 
       - name: Add .nojekyll file
         run: touch .output/public/.nojekyll

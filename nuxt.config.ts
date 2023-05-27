@@ -34,7 +34,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       }
-    }
+    },
   },
   extends: [
     envModules.typography,
@@ -86,7 +86,8 @@ export default defineNuxtConfig({
     dataValue: 'theme'
   },
   experimental: {
-    inlineSSRStyles: false
+    inlineSSRStyles: false,
+    payloadExtraction: false,
   },
   typescript: {
     includeWorkspace: true

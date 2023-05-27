@@ -26,7 +26,7 @@ export default defineAppConfig({
 
     footer: {
       credits: {
-        icon: '/img/logo-footer.png',
+        icon: './img/logo-footer.png',
         text: 'Powered by Nostr',
         href: 'https://github.com/nostr-protocol'
       },
