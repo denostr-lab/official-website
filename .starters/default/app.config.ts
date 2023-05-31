@@ -2,17 +2,17 @@ export default defineAppConfig({
   docus: {
     title: 'Denostr',
     description: 'Denostr: your cloud-native nostr relay',
-    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
+    image: 'https://github.com/denostr-protocol/official-website/assets/8678079/d1d329c8-3c33-4141-ba1f-1b6fef3fa24c',
     socials: {
-      twitter: 'denostr',
-      github: 'Guakamoli/denostr'
+      twitter: 'RealDenostr', // denostr-protocol
+      github: 'denostr-protocol/denostr'
     },
     github: {
       dir: '.starters/default/content',
       branch: 'main',
-      repo: 'denostr-docs',
-      owner: 'guakamoli',
-      edit: true
+      repo: 'official-website',
+      owner: 'denostr-protocol',
+      edit: false
     },
     aside: {
       level: 0,

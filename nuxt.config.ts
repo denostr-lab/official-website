@@ -1,6 +1,7 @@
-import { createResolver, logger, defineNuxtModule } from '@nuxt/kit'
-import { $fetch } from 'ofetch'
-import { version } from './package.json'
+import { createResolver } from '@nuxt/kit'
+// import { createResolver, logger, defineNuxtModule } from '@nuxt/kit'
+// import { $fetch } from 'ofetch'
+// import { version } from './package.json'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -12,20 +13,20 @@ const envModules = {
   typography: process?.env?.THEME_DEV_TYPOGRAPHY_PATH || '@nuxt-themes/typography'
 }
 
-const updateModule = defineNuxtModule({
-  meta: {
-    name: '@nuxt-themes/docus'
-  },
-  setup (_, nuxt) {
-    if (nuxt.options.dev) {
-      $fetch('https://registry.npmjs.org/@nuxt-themes/docus/latest').then((release) => {
-        if (release.version > version) {
-          logger.info(`A new version of Docus (v${release.version}) is available: https://github.com/nuxt-themes/docus/releases/latest`)
-        }
-      }).catch(() => {})
-    }
-  }
-})
+// const updateModule = defineNuxtModule({
+//   meta: {
+//     name: '@nuxt-themes/docus'
+//   },
+//   setup (_, nuxt) {
+//     if (nuxt.options.dev) {
+//       $fetch('https://registry.npmjs.org/@nuxt-themes/docus/latest').then((release) => {
+//         if (release.version > version) {
+//           logger.info(`A new version of Docus (v${release.version}) is available: https://github.com/nuxt-themes/docus/releases/latest`)
+//         }
+//       }).catch(() => {})
+//     }
+//   }
+// })
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -34,7 +35,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     },
   },
   extends: [
@@ -43,13 +44,13 @@ export default defineNuxtConfig({
   ],
   modules: [
     envModules.tokens,
-    envModules.studio,
+    // envModules.studio,
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-config-schema',
     resolve('./app/module'),
-    updateModule as any
+    // updateModule as any
   ],
   css: [
     resolve('./assets/css/main.css')
@@ -67,7 +68,7 @@ export default defineNuxtConfig({
     }
   ],
   pinceau: {
-    studio: true
+    studio: false
   },
   content: {
     documentDriven: true,
