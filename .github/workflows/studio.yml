@@ -67,8 +67,10 @@ jobs:
 
       - name: Generate
         run: |
-          repo=${{ github.repository }}
-          NUXT_APP_BASE_URL=/${repo#*/}/ ${{ steps.pkgman.outputs.package_manager }} nuxi generate
+          # Do not use custom domain
+          # repo=${{ github.repository }}
+          # NUXT_APP_BASE_URL=/${repo#*/}/ ${{ steps.pkgman.outputs.package_manager }} nuxi generate
+          ${{ steps.pkgman.outputs.package_manager }} nuxi generate
 
       - name: Add .nojekyll file
         run: touch .output/public/.nojekyll
