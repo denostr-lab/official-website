@@ -30,7 +30,7 @@ export default defineNuxtSchema({
        * @studioIcon dashicons:cover-image
        * @studioInput file
        */
-      image: 'https://github.com/denostr-protocol/official-website/assets/8678079/d1d329c8-3c33-4141-ba1f-1b6fef3fa24c',
+      image: 'https://github.com/denostr-lab/official-website/assets/8678079/d1d329c8-3c33-4141-ba1f-1b6fef3fa24c',
 
       /**
        * Social links
