@@ -1,1 +1,0 @@
-import{a as r,e as s,o as n,f as a,u as c}from"./entry.ce6e3b9f.js";const _=["src"],d=r({__name:"VoltaBoard",props:{token:{type:String,required:!0}},setup(e){const t=e,o=s(()=>`https://volta.net/embed/${t.token}`);return(l,u)=>(n(),a("iframe",{src:c(o),class:"w-full"},null,8,_))}});export{d as default};
