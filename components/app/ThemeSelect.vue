@@ -18,14 +18,17 @@ const onClick = () => {
       <Icon
         v-if="colorMode.preference === 'dark'"
         name="uil:moon"
+        class="color-mode"
       />
       <Icon
         v-else-if="colorMode.preference === 'light'"
         name="uil:sun"
+        class="color-mode"
       />
       <Icon
         v-else
         name="uil:desktop"
+        class="color-mode"
       />
     </ColorScheme>
   </button>
@@ -36,7 +39,10 @@ css({
   button: {
     display: 'flex',
     padding: '{space.4}',
-
+    '.color-mode': {
+      width: '{space.6}',
+      height: '{space.6}',
+    },
     color: '{color.gray.500}',
     '@dark': {
       color: '{color.gray.400}'
