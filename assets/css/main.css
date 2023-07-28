@@ -35,7 +35,27 @@
 .DocSearch-Input:focus {
   box-shadow: none !important;
 }
-
+@font-face {
+  font-display: swap;
+  font-family: RoobertPRO;
+  font-weight: 400;
+  src: url(../fonts/RoobertPRO-Regular.woff2) format("woff2"),url(../fonts/RoobertPRO-Regular.woff) format("woff")
+}
+@font-face {
+  font-display: swap;
+  font-family: RoobertPRO;
+  font-weight: 500;
+  src: url(../fonts/RoobertPRO-Medium.woff2) format("woff2"),url(../fonts/RoobertPRO-Medium.woff) format("woff")
+}
+@font-face {
+  font-display: swap;
+  font-family: RoobertPRO;
+  font-weight: 600;
+  src: url(../fonts/RoobertPRO-SemiBold.woff2) format("woff2"),url(../fonts/RoobertPRO-SemiBold.woff) format("woff")
+}
+.font-sans {
+  font-family: RoobertPRO,RoobertPRO override,sans-serif
+}
 body {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
