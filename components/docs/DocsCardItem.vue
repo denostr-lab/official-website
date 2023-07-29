@@ -63,7 +63,6 @@ css({
       width: '100%',
       '.title': {
 
-        height: '24px',
         fontSize: '20px',
         fontFamily: 'RoobertPRO,RoobertPRO override,sans-serif;',
         fontWeight: '600',
