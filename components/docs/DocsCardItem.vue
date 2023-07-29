@@ -50,9 +50,9 @@ defineProps({
 <style scoped lang="ts">
 css({
   '.docs-card-item': {
-    width: '400px',
+    width: '100%',
     '.img': {
-      width: '388px',
+      width: '100%',
       height: '200px',
       borderRadius: '10px',
       marginBottom: '18px',
@@ -60,12 +60,12 @@ css({
     },
     '.text-box': {
       textAlign: 'center',
-      width: '400px',
+      width: '100%',
       '.title': {
 
         height: '24px',
         fontSize: '20px',
-        fontFamily: 'SFPro-Semibold, SFPro',
+        fontFamily: 'RoobertPRO,RoobertPRO override,sans-serif;',
         fontWeight: '600',
         color: '{elements.text.primary.color.static}',
 
