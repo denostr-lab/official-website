@@ -27,7 +27,7 @@ defineProps({
           </ContentSlot>
         </h2>
         <p class="link">
-          {{link}}
+          {{link.replace('https://', '')}}
         </p>
       </div>
     </a>
@@ -40,7 +40,7 @@ defineProps({
           </ContentSlot>
         </h2>
         <p class="link">
-          {{link}}
+          {{link.replace('https://', '')}}
         </p>
       </div>
     </a>
@@ -75,7 +75,8 @@ css({
 
 
         fontSize: '16px',
-        fontFamily: 'SFPro-Regular',
+        fontFamily: 'RoobertPRO,RoobertPRO override,sans-serif;',
+
 
         color: 'rgba(127, 223, 158, 1)',
         lineHeight: '19px',
