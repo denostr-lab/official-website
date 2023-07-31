@@ -27,7 +27,7 @@ defineProps({
           </ContentSlot>
         </h2>
         <p class="link">
-          {{link.replace('https://', '')}}
+          {{link.replace('https://', '').replace('www.', '')}}
         </p>
       </div>
     </a>
@@ -40,7 +40,7 @@ defineProps({
           </ContentSlot>
         </h2>
         <p class="link">
-          {{link.replace('https://', '')}}
+          {{link.replace('https://', '').replace('www.', '')}}
         </p>
       </div>
     </a>
