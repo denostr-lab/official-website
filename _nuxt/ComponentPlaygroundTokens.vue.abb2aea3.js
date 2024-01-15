@@ -1,0 +1,1 @@
+import{a as o,o as t,f as n,x as a}from"./entry.41a94284.js";const s={class:"component-playground-data-section"},m=o({__name:"ComponentPlaygroundTokens",props:{componentData:{type:Object,required:!0}},setup(e){return(c,r)=>(t(),n("div",s,a(e.componentData),1))}});export{m as _};
